@@ -46,7 +46,7 @@ class Header extends React.Component {
 			&& <span className="filter-container">
 					<input type="text" className="form-control filter-input" value={filter} onChange={this.filterChanged} ref={this.filterRef} placeholder="Filter" autoFocus={this.props.autofocusFilter} />
 					<span className="close clear-filter" onClick={() => this.filterChanged('')}>
-						&times;
+						X
 					</span>
 				</span>;
 
@@ -62,10 +62,10 @@ class Header extends React.Component {
 				{this.props.children}
 				{this.props.upperHeaderChildren}
 				<div className="row header-row">
-					<div className="col-sm-3 filter-container">
+					<div className="col-sm-4 filter-container">
 						{filterInput}
 					</div>
-					<div className="col-sm-5 col-sm-push-4">
+					<div className="col-sm-4 col-sm-push-4">
 						{perPageSelect}
 					</div>
 					<div className="col-sm-4 col-sm-pull-4 text-center text-muted record-count">

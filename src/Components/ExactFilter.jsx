@@ -12,7 +12,7 @@ class ExactFilter extends React.Component {
 			<span className="filter-item">
 				<span className="filter-item-title">
 					<span className="filter-item-remove" onClick={(e) => removeFilter(filter, e)}>
-						<span className="fa fa-times"></span>
+						<span>X</span>
 					</span>
 					{filter.name}
 				</span>

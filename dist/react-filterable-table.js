@@ -66,7 +66,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.FilterableTable = undefined;
+
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./style.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 	var FilterableTable = __webpack_require__(2);
+
 	module.exports = FilterableTable;
 	exports.FilterableTable = FilterableTable;
 
@@ -964,7 +969,7 @@ return /******/ (function(modules) { // webpackBootstrap
 						{ className: 'close clear-filter', onClick: function onClick() {
 								return _this2.filterChanged('');
 							} },
-						'\xD7'
+						'X'
 					)
 				);
 
@@ -991,12 +996,12 @@ return /******/ (function(modules) { // webpackBootstrap
 						{ className: 'row header-row' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-sm-3 filter-container' },
+							{ className: 'col-sm-4 filter-container' },
 							filterInput
 						),
 						_react2.default.createElement(
 							'div',
-							{ className: 'col-sm-5 col-sm-push-4' },
+							{ className: 'col-sm-4 col-sm-push-4' },
 							perPageSelect
 						),
 						_react2.default.createElement(
@@ -1145,7 +1150,11 @@ return /******/ (function(modules) { // webpackBootstrap
 							{ className: "filter-item-remove", onClick: function onClick(e) {
 									return removeFilter(filter, e);
 								} },
-							_react2.default.createElement("span", { className: "fa fa-times" })
+							_react2.default.createElement(
+								"span",
+								null,
+								"X"
+							)
 						),
 						filter.name
 					),
