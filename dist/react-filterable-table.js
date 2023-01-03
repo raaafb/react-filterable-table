@@ -66,12 +66,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.FilterableTable = undefined;
-
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./style.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
 	var FilterableTable = __webpack_require__(2);
-
 	module.exports = FilterableTable;
 	exports.FilterableTable = FilterableTable;
 
